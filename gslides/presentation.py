@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple, Type, TypeVar, Union
 import requests
 from IPython.display import Image
 
-from . import creds, package_font
+from . import creds, package_
 from .chart import Chart
 from .config import PRESENTATION_PARAMS
 from .table import Table
@@ -326,7 +326,7 @@ class AddSlide:
                         "style": {
                             "bold": True,
                             "fontFamily": package_font.font,
-                            "fontSize": {"magnitude": 24, "unit": "PT"},
+                            "fontSize": {"magnitude": 15, "unit": "PT"},
                         },
                         "fields": "bold,fontFamily,fontSize",
                     }
